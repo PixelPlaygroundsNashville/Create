@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Services | Synthesis Protocols | Pixel Playgrounds Nashville</title>
+     <meta name="description" content="Explore Pixel Playgrounds Nashville's core services: bespoke design and installation for Podcast Sanctuaries, Streamer Command Hubs, and Immersive Gamer Nexus points.">
+    <meta name="keywords" content="podcast studio setup, streamer room design, gamer setup installation, nashville av integrator, custom creator spaces, acoustic treatment, RGB lighting, video podcast setup, gaming pc build nashville">
+     <meta property="og:title" content="Core Services | Synthesis Protocols | Pixel Playgrounds Nashville">
+    <meta property="og:description" content="Detailed overview of PPN's services for podcasters, streamers, and gamers in Nashville.">
+    <meta property="og:image" content="./images/PPN_Image_PodcastStreamer.jpg"> <!-- Use a relevant preview image -->
+    <!-- <meta property="og:url" content="[Your Deployed Website URL]/services.html"> --> <!-- Placeholder - Add actual deployed site URL -->
+    <meta property="og:type" content="website">
+     <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+     <style>
+        /* .logo-image { max-height: 50px; width: auto; vertical-align: middle; } */ /* Removed - Likely handled globally */
+        .page-header.services-header {
+             background: url('./images/PPN_Icons_TechMusicEyeChip.jpg') no-repeat center center/cover; /* Example: Use icon image as background */
+             position: relative;
+             overflow: hidden;
+        }
+        .service-detail h3.sub-heading { /* Style for new subheadings */
+            color: var(--accent-magenta);
+            font-family: var(--font-secondary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            border-left: 4px solid var(--accent-magenta);
+            padding-left: 10px;
+            letter-spacing: 1px;
+        }
+         .service-detail ul.components-list li {
+            margin-bottom: 0.7rem;
+            padding-left: 20px;
+         }
+         .service-detail ul.components-list li::before {
+            content: '\f105'; /* Chevron Right */
+            font-family: 'Font Awesome 6 Free'; font-weight: 900;
+            color: var(--accent-cyan);
+             position: absolute; left: 0; top: 5px;
+         }
+        .page-header.services-header .header-grid-anim {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.22;
+            animation: grid-move 18s linear infinite;
+        }
+        @keyframes grid-move {
+            0% { background-position: 0 0; }
+            100% { background-position: 120px 60px; }
+        }
+        .headline-glow, h2[data-text] {
+            position: relative;
+            color: #00f0ff;
+            text-shadow: 0 0 12px #00f0ff, 0 0 32px #f000ff;
+            animation: glitch-flicker 2.2s infinite alternate-reverse;
+        }
+        @keyframes glitch-flicker {
+            0% { text-shadow: 0 0 12px #00f0ff, 0 0 32px #f000ff; }
+            10% { text-shadow: 2px 0 18px #f000ff, -2px 0 18px #00f0ff; }
+            20% { text-shadow: 0 2px 24px #00f0ff, 0 -2px 24px #f000ff; }
+            30% { text-shadow: 0 0 12px #00f0ff, 0 0 32px #f000ff; }
+            40% { text-shadow: 2px 2px 18px #f000ff, -2px -2px 18px #00f0ff; }
+            100% { text-shadow: 0 0 12px #00f0ff, 0 0 32px #f000ff; }
+        }
+        .value-card, .service-detail .container, .customization-process .container, .installation-support .container {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 0 32px 0 rgba(0,240,255,0.10);
+        }
+        .value-card::before, .service-detail .container::before, .customization-process .container::before, .installation-support .container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 18px;
+            border: 2.5px solid transparent;
+            background: linear-gradient(120deg, #00f0ff, #f000ff, #00f0ff) border-box;
+            mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            pointer-events: none;
+            z-index: 2;
+            animation: border-glow 3.5s linear infinite;
+        }
+        @keyframes border-glow {
+            0% { filter: blur(2px) brightness(1.1); opacity: 0.7; }
+            50% { filter: blur(6px) brightness(1.5); opacity: 1; }
+            100% { filter: blur(2px) brightness(1.1); opacity: 0.7; }
+        }
+        .cyber-orb-anim {
+            position: fixed;
+            right: 3vw;
+            bottom: 7vh;
+            z-index: 9999;
+            pointer-events: none;
+            animation: orb-float 5s ease-in-out infinite alternate;
+        }
+        @keyframes orb-float {
+            0% { transform: translateY(0) scale(1); filter: blur(0px); }
+            50% { transform: translateY(-18px) scale(1.08); filter: blur(2px); }
+            100% { transform: translateY(0) scale(1); filter: blur(0px); }
+        }
+    </style>
+</head>
+<body class="services-page">
+     <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                 <a href="index.html">
+                    <img src="./images/PPN_Logo_main.jpg.jpg" alt="Pixel Playgrounds Nashville Logo" class="logo-image">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li class="dropdown">
+                        <a href="podcasting-guide.html" class="dropbtn">Guides <i class="fas fa-chevron-down fa-xs"></i></a>
+                        <div class="dropdown-content">
+                            <a href="podcasting-guide.html">Podcasting Guide</a>
+                            <a href="streaming-guide.html">Streaming Guide</a>
+                            <a href="gaming-setup.html">Gaming Setup Guide</a>
+                            <a href="creator-tools-guide.html">Creator Tools</a>
+                        </div>
+                    </li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEO & Professional Rewrite: 2024-06-14 by Brent -->
+        <section class="page-header section-padding services-header">
+            <div class="container">
+                <h1 class="headline-glow" data-text="Core Synthesis Protocols">Our Core Services: Elite Studio Design & Installation</h1>
+                <p>Pixel Playgrounds Nashville: Setting the Standard for Podcast, Streaming, and Gaming Environments</p>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section class="service-intro section-padding">
+            <div class="container animate-on-scroll">
+                <p>At Pixel Playgrounds Nashville, we transform creative ambition into reality. Our end-to-end service delivers custom-built digital environments for podcasters, streamers, and gamers who demand the best. Every project is a unique collaboration, engineered for performance, aesthetics, and future-proof reliability. Explore our core offerings below and discover why Nashville's top creators trust us to elevate their craft.</p>
+            </div>
+        </section>
+
+        <!-- PODCAST SECTION -->
+        <section id="podcast" class="service-detail section-padding bg-darker">
+            <div class="container service-layout">
+                <div class="service-text animate-on-scroll" style="--item-index: 0;">
+                    <h2 data-text="Protocol P: Podcast Sanctuaries">Podcast Studio Design & Installation</h2>
+                    <p>We create professional podcast studios tailored to your voice, brand, and workflow. From solo creators to multi-host productions, our spaces deliver pristine audio, stunning visuals, and seamless usability—so you can focus on content, not tech headaches.</p>
+                    <h3 class="sub-heading">Ideal For:</h3>
+                    <p>Podcasters, interviewers, storytellers, business leaders, musicians, and anyone seeking broadcast-quality sound and video in Nashville.</p>
+                    <h3 class="sub-heading">Key Features & Technologies:</h3>
+                    <ul class="components-list">
+                        <li>Premium microphones (dynamic, condenser, USB) selected for your space and style</li>
+                        <li>Professional audio interfaces and mixers for crystal-clear sound</li>
+                        <li>Closed-back headphones and multi-host monitoring solutions</li>
+                        <li>Custom acoustic treatment for flawless recordings</li>
+                        <li>High-end cameras and lighting for video podcasts</li>
+                        <li>Ergonomic stands, mounts, and cable management</li>
+                    </ul>
+                    <h3 class="sub-heading">Our Approach:</h3>
+                    <p>We analyze your room, optimize every detail, and deliver a turnkey studio that looks and sounds world-class. Training and ongoing support included.</p>
+                    <a href="https://www.instagram.com/pixelplaygroundsnashville/" target="_blank" class="cta-button">Book Your Podcast Studio on Instagram</a>
+                    <a href="contact.html?setup-type=podcast" class="cta-button-secondary">Or Use Our Contact Form</a>
+                </div>
+                <div class="service-image animate-on-scroll" style="--item-index: 1;">
+                    <img src="./images/PPN_Concept_Podcast.jpg" alt="Detailed Podcast Studio Concept">
+                </div>
+            </div>
+        </section>
+
+        <!-- STREAMER SECTION -->
+        <section id="streamer" class="service-detail section-padding">
+            <div class="container service-layout service-layout-reverse">
+                <div class="service-image animate-on-scroll" style="--item-index: 1;">
+                    <img src="./images/PPN_Concept_Streamer.jpg" alt="Detailed Streamer Hub Concept">
+                </div>
+                <div class="service-text animate-on-scroll" style="--item-index: 0;">
+                    <h2 data-text="Protocol S: Streamer Command Hubs">Streaming Room Design & Integration</h2>
+                    <p>Command your stream with a broadcast-ready environment engineered for engagement, control, and visual impact. We integrate the latest tech, dynamic lighting, and ergonomic layouts to help you stand out and grow your audience—locally and globally.</p>
+                    <h3 class="sub-heading">Ideal For:</h3>
+                    <p>Twitch and YouTube streamers, educators, musicians, creative personalities, and Nashville's most ambitious live content creators.</p>
+                    <h3 class="sub-heading">Key Features & Technologies:</h3>
+                    <ul class="components-list">
+                        <li>High-frame-rate cameras and capture cards for flawless video</li>
+                        <li>Studio-grade microphones and audio chains</li>
+                        <li>Dynamic, programmable RGB lighting and accent systems</li>
+                        <li>Stream Decks and control surfaces for seamless production</li>
+                        <li>Multi-monitor setups and green screen integration</li>
+                        <li>Network optimization for zero-lag streaming</li>
+                    </ul>
+                    <h3 class="sub-heading">Our Approach:</h3>
+                    <p>We design, install, and calibrate every element for maximum impact and ease of use. Your brand, your workflow, our expertise.</p>
+                    <a href="https://www.instagram.com/pixelplaygroundsnashville/" target="_blank" class="cta-button">Book Your Stream Room on Instagram</a>
+                    <a href="contact.html?setup-type=streamer" class="cta-button-secondary">Or Use Our Contact Form</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- GAMER SECTION -->
+        <section id="gamer" class="service-detail section-padding bg-darker">
+            <div class="container service-layout">
+                <div class="service-text animate-on-scroll" style="--item-index: 0;">
+                    <h2 data-text="Protocol G: Immersive Gamer Nexus">Custom Gaming Room Builds</h2>
+                    <p>Level up your play with a gaming space engineered for performance, comfort, and jaw-dropping aesthetics. We build battlestations for esports pros, VR enthusiasts, and anyone who wants the ultimate immersive experience in Nashville.</p>
+                    <h3 class="sub-heading">Ideal For:</h3>
+                    <p>Competitive gamers, streamers, VR/sim pilots, and anyone who wants a next-level gaming environment.</p>
+                    <h3 class="sub-heading">Key Features & Technologies:</h3>
+                    <ul class="components-list">
+                        <li>High-refresh, low-latency displays and multi-monitor setups</li>
+                        <li>Custom-built PCs or console integration</li>
+                        <li>Pro-grade peripherals and ergonomic furniture</li>
+                        <li>Immersive audio, surround sound, and DAC/amp solutions</li>
+                        <li>RGB lighting, cable management, and aesthetic customization</li>
+                        <li>Thermal management and advanced cable routing</li>
+                    </ul>
+                    <h3 class="sub-heading">Our Approach:</h3>
+                    <p>We obsess over every detail—latency, comfort, and style—so you can focus on winning. Every build is unique, every result is elite.</p>
+                    <a href="https://www.instagram.com/pixelplaygroundsnashville/" target="_blank" class="cta-button">Book Your Gamer Room on Instagram</a>
+                    <a href="contact.html?setup-type=gamer" class="cta-button-secondary">Or Use Our Contact Form</a>
+                </div>
+                <div class="service-image animate-on-scroll" style="--item-index: 1;">
+                    <img src="./images/PPN_Concept_Gamer.jpg" alt="Detailed Gamer Nexus Concept">
+                </div>
+            </div>
+        </section>
+
+        <section class="customization-process section-padding">
+            <div class="container animate-on-scroll">
+                <h2 data-text="Bespoke Synthesis Protocol">Our Customization Process</h2>
+                <p>Every project begins with a deep-dive consultation. We map your goals, workflow, budget, and style to a custom blueprint—then iterate until it's perfect. Our process is transparent, collaborative, and focused on your success.</p>
+                <a href="process.html" class="cta-button-secondary">See Our Full Process</a>
+            </div>
+        </section>
+
+        <section class="installation-support section-padding bg-darker">
+            <div class="container animate-on-scroll">
+                <h2 data-text="Synthesis, Calibration & Support Matrix">Installation, Calibration & Ongoing Support</h2>
+                <p>Our expert Nashville-based team handles every detail: on-site installation, system calibration, and hands-on training. We ensure your space is ready for action from day one—and we're always here for upgrades, troubleshooting, and future enhancements.</p>
+            </div>
+        </section>
+
+        <section class="final-cta section-padding">
+            <div class="container animate-on-scroll">
+                <h2 data-text="Initiate Direct Interface?">Ready to Build Your Dream Studio?</h2>
+                <p>Don't settle for ordinary. Connect with Pixel Playgrounds Nashville and let's create a space that inspires, performs, and grows with you. DM us on Instagram for the fastest response—or use our contact form below.</p>
+                <a href="https://www.instagram.com/pixelplaygroundsnashville/" target="_blank" class="cta-button" style="margin-right: 15px;"><i class="fab fa-instagram"></i> Book Consultation via Instagram</a>
+                <a href="contact.html" class="cta-button-secondary"><i class="fas fa-envelope"></i> Or Use Our Contact Form</a>
+            </div>
+        </section>
+    </main>
+
+     <footer class="site-footer">
+         <div class="container footer-container">
+             <div class="footer-logo">
+                 <img src="./images/PPN_Logo_vertical.jpg" alt="Pixel Playgrounds Vertical Logo" class="footer-logo-image">
+             </div>
+            <div class="footer-social">
+                 <a href="https://instagram.com/pixelplaygroundsnashville" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                 <a href="tel:+16156064969" aria-label="Call Us"><i class="fas fa-phone"></i></a>
+                 <a href="mailto:ppnashville@icloud.com" aria-label="Email Us"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-copyright">
+                 <p>&copy; <span id="current-year"></span> Pixel Playgrounds Nashville // Systems Optimized // All Rights Reserved.</p>
+                 <p>Nashville's Premier Architects for Custom Creator & Gamer Environments.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <!-- 1. Animated SVG grid overlay in header -->
+    <div class="header-grid-anim" aria-hidden="true">
+        <svg width="100%" height="100%" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <defs>
+                <pattern id="bleedgrid" width="60" height="60" patternUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="60" height="60" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.13"/>
+                </pattern>
+            </defs>
+            <rect width="1200" height="220" fill="url(#bleedgrid)"/>
+        </svg>
+    </div>
+    <!-- 4. Floating animated cyber orb accent -->
+    <div class="cyber-orb-anim" aria-hidden="true">
+        <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <radialGradient id="orbGlow2" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#f000ff" stop-opacity="0.95"/>
+                    <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.18"/>
+                </radialGradient>
+                <filter id="orbBlur" x="-10" y="-10" width="108" height="108">
+                    <feGaussianBlur stdDeviation="6"/>
+                </filter>
+            </defs>
+            <circle cx="44" cy="44" r="36" fill="url(#orbGlow2)" filter="url(#orbBlur)"/>
+            <circle cx="44" cy="44" r="18" fill="#f000ff" opacity="0.7"/>
+            <circle cx="44" cy="44" r="8" fill="#00f0ff" opacity="0.5"/>
+        </svg>
+    </div>
+</body>
+</html>

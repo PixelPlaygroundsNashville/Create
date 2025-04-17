@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Pixel Playgrounds Nashville | Our Genesis & Protocol</title>
+    <meta name="description" content="Learn about Pixel Playgrounds Nashville - our mission, vision, values, and the protocol that makes us Nashville's premier choice for custom creator and gamer spaces.">
+     <meta property="og:title" content="About Pixel Playgrounds Nashville | Our Genesis & Protocol">
+    <meta property="og:description" content="Discover the mission, vision, and unique approach of Pixel Playgrounds Nashville.">
+    <meta property="og:image" content="./images/PPN_Concept_Uplink.jpg"> <!-- Use a relevant preview image -->
+    <!-- <meta property="og:url" content="[Your Deployed Website URL]/about.html"> --> <!-- Placeholder - Add actual deployed site URL -->
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+     <style>
+        .logo-image { max-height: 50px; width: auto; vertical-align: middle; }
+        .page-header.about-header { /* Unique class for specific background */
+             background: url('./images/PPN_Concept_Uplink.jpg') no-repeat center center/cover;
+        }
+        .value-icon i {
+          animation: pulse-glow 2.2s infinite alternate cubic-bezier(.4,0,.6,1);
+          filter: drop-shadow(0 0 8px #00f0ff) drop-shadow(0 0 2px #f000ff);
+        }
+        @keyframes pulse-glow {
+          0% { filter: drop-shadow(0 0 8px #00f0ff) drop-shadow(0 0 2px #f000ff); }
+          100% { filter: drop-shadow(0 0 18px #f000ff) drop-shadow(0 0 8px #00f0ff); }
+        }
+        .about-svg-waveform { margin-top: 18px; margin-bottom: -12px; }
+        .bg-darker {
+          background: linear-gradient(120deg, rgba(0,240,255,0.10) 0%, rgba(240,0,255,0.10) 100%), #0a0f1a;
+          box-shadow: 0 0 32px 0 rgba(0,240,255,0.10);
+        }
+        .cta-button {
+          background: linear-gradient(90deg, #00f0ff 0%, #f000ff 100%);
+          color: #fff;
+          border: none;
+          box-shadow: 0 0 16px 2px #00f0ff, 0 0 32px 0 #f000ff;
+          transition: background 0.3s, box-shadow 0.3s;
+        }
+        .cta-button:hover {
+          background: linear-gradient(90deg, #f000ff 0%, #00f0ff 100%);
+          box-shadow: 0 0 32px 6px #f000ff, 0 0 64px 0 #00f0ff;
+        }
+        /* BLEEDING EDGE ANIMATIONS: 2024-06-14 by Brent */
+        /* 1. Animated background grid overlay for header */
+        .about-header {
+          position: relative;
+          overflow: hidden;
+        }
+        .about-header .header-grid-anim {
+          position: absolute;
+          top: 0; left: 0; width: 100%; height: 100%;
+          z-index: 1;
+          pointer-events: none;
+          opacity: 0.22;
+          animation: grid-move 18s linear infinite;
+        }
+        @keyframes grid-move {
+          0% { background-position: 0 0; }
+          100% { background-position: 120px 60px; }
+        }
+
+        /* 2. Glitch animation for section headings */
+        .headline-glow, h2[data-text] {
+          position: relative;
+          color: #00f0ff;
+          text-shadow: 0 0 12px #00f0ff, 0 0 32px #f000ff;
+          animation: glitch-flicker 2.2s infinite alternate-reverse;
+        }
+        @keyframes glitch-flicker {
+          0% { text-shadow: 0 0 12px #00f0ff, 0 0 32px #f000ff; }
+          10% { text-shadow: 2px 0 18px #f000ff, -2px 0 18px #00f0ff; }
+          20% { text-shadow: 0 2px 24px #00f0ff, 0 -2px 24px #f000ff; }
+          30% { text-shadow: 0 0 12px #00f0ff, 0 0 32px #f000ff; }
+          40% { text-shadow: 2px 2px 18px #f000ff, -2px -2px 18px #00f0ff; }
+          100% { text-shadow: 0 0 12px #00f0ff, 0 0 32px #f000ff; }
+        }
+
+        /* 3. Animated glowing border for cards */
+        .value-card, .team .container, .about-difference .container {
+          position: relative;
+          border-radius: 18px;
+          overflow: hidden;
+          box-shadow: 0 0 32px 0 rgba(0,240,255,0.10);
+        }
+        .value-card::before, .team .container::before, .about-difference .container::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          border-radius: 18px;
+          border: 2.5px solid transparent;
+          background: linear-gradient(120deg, #00f0ff, #f000ff, #00f0ff) border-box;
+          mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+          mask-composite: exclude;
+          pointer-events: none;
+          z-index: 2;
+          animation: border-glow 3.5s linear infinite;
+        }
+        @keyframes border-glow {
+          0% { filter: blur(2px) brightness(1.1); opacity: 0.7; }
+          50% { filter: blur(6px) brightness(1.5); opacity: 1; }
+          100% { filter: blur(2px) brightness(1.1); opacity: 0.7; }
+        }
+
+        /* 4. Floating animated cyber orb accent */
+        .cyber-orb-anim {
+          position: fixed;
+          right: 3vw;
+          bottom: 7vh;
+          z-index: 9999;
+          pointer-events: none;
+          animation: orb-float 5s ease-in-out infinite alternate;
+        }
+        @keyframes orb-float {
+          0% { transform: translateY(0) scale(1); filter: blur(0px); }
+          50% { transform: translateY(-18px) scale(1.08); filter: blur(2px); }
+          100% { transform: translateY(0) scale(1); filter: blur(0px); }
+        }
+        /* END BLEEDING EDGE ANIMATIONS */
+    </style>
+</head>
+<body class="about-page">
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                 <a href="index.html">
+                    <img src="./images/PPN_Logo_main.jpg.jpg" alt="Pixel Playgrounds Nashville Logo" class="logo-image">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown">
+                        <a href="podcasting-guide.html" class="dropbtn">Guides <i class="fas fa-chevron-down fa-xs"></i></a>
+                        <div class="dropdown-content">
+                            <a href="podcasting-guide.html">Podcasting Guide</a>
+                            <a href="streaming-guide.html">Streaming Guide</a>
+                            <a href="gaming-setup.html">Gaming Setup Guide</a>
+                            <a href="creator-tools-guide.html">Creator Tools</a>
+                        </div>
+                    </li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header section-padding about-header">
+            <div class="container">
+                 <h1 class="headline-glow" data-text="Decoding PPN">About Pixel Playgrounds Nashville</h1>
+                <p>Engineering Nashville's Most Advanced Creator Spaces // Our Mission, Vision & Protocol</p>
+                <!-- Animated SVG accent: Futuristic waveform -->
+                <div class="about-svg-waveform" aria-hidden="true">
+                  <svg width="100%" height="32" viewBox="0 0 600 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polyline points="0,16 40,8 80,24 120,12 160,28 200,4 240,20 280,10 320,30 360,6 400,26 440,8 480,24 520,12 560,28 600,16" stroke="#00f0ff" stroke-width="3" fill="none" filter="url(#glow)"/>
+                    <defs>
+                      <filter id="glow" x="-10" y="-10" width="620" height="52">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge>
+                          <feMergeNode in="coloredBlur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                      </filter>
+                    </defs>
+                  </svg>
+                </div>
+            </div>
+             <div class="hero-overlay"></div>
+        </section>
+
+        <section class="about-story section-padding">
+            <div class="container animate-on-scroll">
+                 <h2 data-text="Our Genesis Signal">Our Origin Story</h2>
+                <p>Pixel Playgrounds Nashville was founded to solve a critical problem: Nashville's creative talent was being held back by uninspired, generic, or technically inadequate environments. We saw podcasters, streamers, and gamers with world-class potential, but their spaces were bottlenecks—not catalysts. Our mission is to design and build custom, high-performance digital playgrounds where technology, acoustics, ergonomics, and aesthetics work in perfect harmony. We believe the right environment doesn't just help—it transforms creators into leaders in Music City's digital revolution.</p>
+            </div>
+        </section>
+
+        <section class="vision-values section-padding bg-darker">
+            <div class="container">
+                 <h2 data-text="Mission // Vision // Core Protocol">Our Mission, Vision & Core Values</h2>
+                <div class="vision-values-grid">
+                    <div class="value-card animate-on-scroll" style="--item-index: 0;">
+                        <div class="value-icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Mission</h3>
+                        <p>Empower Nashville's creators and businesses by designing and installing world-class digital studios, podcast sanctuaries, and gaming environments—spaces that inspire, perform, and set new standards for excellence.</p>
+                    </div>
+                    <div class="value-card animate-on-scroll" style="--item-index: 1;">
+                        <div class="value-icon"><i class="fas fa-satellite-dish"></i></div>
+                        <h3>Vision</h3>
+                        <p>To be Nashville's undisputed leader in custom creator spaces, recognized for innovation, expertise, and a relentless focus on client success. We set the benchmark for immersive, future-ready environments.</p>
+                    </div>
+                    <div class="value-card animate-on-scroll" style="--item-index: 2;">
+                        <div class="value-icon"><i class="fas fa-atom"></i></div>
+                        <h3>Core Values</h3>
+                        <ul>
+                            <li><i class="fas fa-cogs"></i> Ingenuity & Innovation: Every project is unique. We never template, always optimize.</li>
+                            <li><i class="fas fa-users"></i> Collaboration: Your vision is our blueprint. We listen, adapt, and deliver.</li>
+                            <li><i class="fas fa-medal"></i> Precision & Quality: We obsess over details and use only proven, durable components.</li>
+                            <li><i class="fas fa-brain"></i> Deep Expertise: From acoustics to networking, our knowledge is comprehensive and current.</li>
+                            <li><i class="fas fa-crosshairs"></i> Client Focus: Every solution is laser-targeted to your goals and workflow.</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Nashville Roots: We know the city, the spaces, and the creative community.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-difference section-padding" id="ppn-difference">
+            <div class="container animate-on-scroll">
+                 <h2 data-text="The PPN Synthesis Protocol">How We Work: The PPN Synthesis Protocol</h2>
+                <p>Our process is more than a checklist—it's a proven protocol for translating your vision into a high-performance, future-proof environment. Here's how we deliver results that exceed expectations:</p>
+                <ul>
+                     <li><i class="fas fa-check-double"></i><strong>Vision-First Design:</strong> We start with your goals, workflow, and style. No cookie-cutter solutions—ever.</li>
+                     <li><i class="fas fa-check-double"></i><strong>Holistic Integration:</strong> Acoustics, lighting, ergonomics, tech, and power are engineered as a seamless ecosystem.</li>
+                    <li><i class="fas fa-check-double"></i><strong>Expert Sourcing:</strong> We select the right gear for your needs and budget, not just what's trendy.</li>
+                    <li><i class="fas fa-check-double"></i><strong>Meticulous Installation:</strong> Every detail is calibrated for performance, reliability, and immediate usability.</li>
+                     <li><i class="fas fa-check-double"></i><strong>Local Insight:</strong> Our Nashville roots mean faster, smarter project execution and support.</li>
+                    <li><i class="fas fa-check-double"></i><strong>End-to-End Partnership:</strong> From first call to ongoing support, we're your technical allies.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="team section-padding bg-darker">
+            <div class="container">
+                 <h2 data-text="Meet the Synthesis Architects">Meet the Team</h2>
+                <p class="animate-on-scroll">Our team is a collective of Nashville's top system integrators, audio engineers, video specialists, and environment designers. We combine technical mastery with a passion for empowering creators. (Individual bios coming soon.)</p>
+                 </div>
+        </section>
+
+        <section class="nashville-focus section-padding">
+            <div class="container animate-on-scroll">
+                 <h2 data-text="Plugged Into The Nashville Grid">Proudly Nashville-Based</h2>
+                <p>We're deeply embedded in the Nashville creative scene, committed to elevating the city's digital infrastructure and supporting its world-class talent. If you're a podcaster, streamer, musician, gamer, or business ready to level up, we're your local partner for next-level results.</p>
+                 <a href="https://www.instagram.com/pixelplaygroundsnashville/" target="_blank" class="cta-button"><i class="fab fa-instagram"></i> Start Your Project on Instagram</a>
+                 <a href="contact.html" class="cta-button-secondary"><i class="fas fa-envelope"></i> Or Use Our Contact Form</a>
+            </div>
+        </section>
+
+    </main>
+
+   <footer class="site-footer">
+         <div class="container footer-container">
+             <div class="footer-logo">
+                 <img src="./images/PPN_Logo_vertical.jpg" alt="Pixel Playgrounds Vertical Logo" class="footer-logo-image">
+             </div>
+            <div class="footer-social">
+                 <a href="https://instagram.com/pixelplaygroundsnashville" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                 <a href="tel:+16156064969" aria-label="Call Us"><i class="fas fa-phone"></i></a>
+                 <a href="mailto:ppnashville@icloud.com" aria-label="Email Us"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-copyright">
+                 <p>&copy; <span id="current-year"></span> Pixel Playgrounds Nashville // Systems Optimized // All Rights Reserved.</p>
+                 <p>Nashville's Premier Architects for Custom Creator & Gamer Environments.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <!-- 1. Animated SVG grid overlay in header -->
+    <div class="header-grid-anim" aria-hidden="true">
+      <svg width="100%" height="100%" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+        <defs>
+          <pattern id="bleedgrid" width="60" height="60" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="60" height="60" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.13"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="220" fill="url(#bleedgrid)"/>
+      </svg>
+    </div>
+    <!-- 4. Floating animated cyber orb accent -->
+    <div class="cyber-orb-anim" aria-hidden="true">
+      <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="orbGlow2" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f000ff" stop-opacity="0.95"/>
+            <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.18"/>
+          </radialGradient>
+          <filter id="orbBlur" x="-10" y="-10" width="108" height="108">
+            <feGaussianBlur stdDeviation="6"/>
+          </filter>
+        </defs>
+        <circle cx="44" cy="44" r="36" fill="url(#orbGlow2)" filter="url(#orbBlur)"/>
+        <circle cx="44" cy="44" r="18" fill="#f000ff" opacity="0.7"/>
+        <circle cx="44" cy="44" r="8" fill="#00f0ff" opacity="0.5"/>
+      </svg>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+# Node modules (if you ever add npm tooling)
+node_modules/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# VS Code and other IDE/editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Log files
+*.log
+
+# Build/deploy artifacts (if you ever add a build step)
+dist/
+build/
+
+# Environment files (if you ever add them)
+.env
+.env.*
+
+# Mac system files
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Desktop.ini
+$RECYCLE.BIN/
+
+# SFTP/FTP config
+*.ftpconfig
+
+# npm debug log
+npm-debug.log*
+
+# Coverage reports (if you ever add testing)
+coverage/
+
+# Ignore backup files
+*~
+*.bak
+
+# Ignore by default nothing in your actual site source (HTML, CSS, JS, images, etc.) 
